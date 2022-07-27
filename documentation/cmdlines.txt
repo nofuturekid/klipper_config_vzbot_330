@@ -1,0 +1,11 @@
+# Flash Bootloader over DFU
+sudo dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/CanBoot/out/canboot.bin
+
+# Flash Klipper over DFU (8KiB Bootloader)
+sudo dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08002000 -D out/klipper.bin
+
+# Check available CAN devices
+python3 /home/pi/klipper/lib/canboot/flash_can.py -q
+
+# Flash Klipper over CAN
+python3 /home/pi/klipper/lib/canboot/flash_can.py -i can0 -f "/home/pi/klipper_config/firmware_binaries/BTT-EBB_v1.1_(CAN)_(v0.10.0-531-g3796a319).bin" -u d4515d96685b
