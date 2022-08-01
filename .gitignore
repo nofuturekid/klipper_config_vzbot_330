@@ -1,0 +1,7 @@
+# exclude "firmware_binaries" folder but ".gitkeep"
+/firmware_binaries/*
+!/firmware_binaries/.gitkeep
+
+# exclude "graphs" folder but ".gitkeep"
+/graphs/*
+!/graphs/.gitkeep
