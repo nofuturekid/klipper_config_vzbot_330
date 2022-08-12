@@ -5,3 +5,5 @@
 # exclude "graphs" folder but ".gitkeep"
 /graphs/*
 !/graphs/.gitkeep
+
+*.bkp
