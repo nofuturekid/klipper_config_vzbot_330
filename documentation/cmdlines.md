@@ -24,9 +24,9 @@ sudo dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08002000 -D out/klipper.bin
 ################################################################################
 ### Flash BTT-EBB
 ```shell
-python3 /home/pi/klipper/lib/canboot/flash_can.py -i can0 -u d4515d96685b -f "BTT-EBB_v1.1_(CAN)_(v0.10.0-531-g3796a319).bin"
+python3 /home/pi/klipper/lib/canboot/flash_can.py -i can0 -u d4515d96685b -f "BTT-EBB_v1.1_(CAN)*"
 ```
 ### Flash MellowFly8
 ```shell
-./scripts/flash_usb.py -t stm32f407xx -s 0x8008000 -d /dev/ttyACM0 "/home/pi/klipper_config/firmware_binaries/Mellow-Fly_Super_8_(v0.10.0-591-ga2482d4f).bin"
+./scripts/flash_usb.py -t stm32f407xx -s 0x8008000 -d /dev/ttyACM0 "/home/pi/printer_data/config/firmware_binaries/Mellow-Fly_Super_8*"
 ```

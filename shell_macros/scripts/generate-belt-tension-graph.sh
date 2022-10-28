@@ -6,7 +6,7 @@ set -e -u -o pipefail
 ## but this has been reliable for me so far…
 sleep 10
 
-outdir=/home/pi/klipper_config/graphs
+outdir=/home/pi/printer_data/config/graphs
 
 if [ ! -d "${outdir}" ]; then
     mkdir "${outdir}"

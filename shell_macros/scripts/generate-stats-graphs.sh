@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DATE=$(date +'%Y-%m-%d-%H%M%S')
-OUTDIR=/home/pi/klipper_config/graphs
+OUTDIR=/home/pi/printer_data/config/graphs
 
 if [ ! -d "${OUTDIR}" ]
 then

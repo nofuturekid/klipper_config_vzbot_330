@@ -4,9 +4,9 @@ set -e
 
 KLIPPER_DIR="/home/pi/klipper"
 KLIPPER_VERSION=$(git -C "${KLIPPER_DIR}" describe --tags)
-BOARD_CONFIG_DIR="/home/pi/klipper_config/boards"
+BOARD_CONFIG_DIR="/home/pi/printer_data/config/boards"
 BOARD_CONFIG_FILES="${BOARD_CONFIG_DIR}/*.config"
-OUTDIR="/home/pi/klipper_config/firmware_binaries"
+OUTDIR="/home/pi/printer_data/config/firmware_binaries"
 
 ##########################################################
 function create_outdir {
