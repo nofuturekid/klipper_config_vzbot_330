@@ -29,15 +29,15 @@ function compile_firmware {
 function copy_firmware {
     if [ -f "${KLIPPER_DIR}/out/klipper.bin" ]
     then
-        cp "${KLIPPER_DIR}/out/klipper.bin" "${OUTDIR}/${1}_(${KLIPPER_VERSION}).bin"
+        cp "${KLIPPER_DIR}/out/klipper.bin" "${OUTDIR}/${1}_${KLIPPER_VERSION}.bin"
         return
     elif [ -f "${KLIPPER_DIR}/out/klipper.hex" ]
     then
-        cp "${KLIPPER_DIR}/out/klipper.hex" "${OUTDIR}/${1}_(${KLIPPER_VERSION}).hex"
+        cp "${KLIPPER_DIR}/out/klipper.hex" "${OUTDIR}/${1}_${KLIPPER_VERSION}.hex"
         return
     elif [ -f "${KLIPPER_DIR}/out/klipper.elf" ]
     then
-        cp "${KLIPPER_DIR}/out/klipper.elf" "${OUTDIR}/${1}_(${KLIPPER_VERSION}).elf"
+        cp "${KLIPPER_DIR}/out/klipper.elf" "${OUTDIR}/${1}_${KLIPPER_VERSION}.elf"
         return
     else
         echo "No binaries were built, please check for problems during build process."
